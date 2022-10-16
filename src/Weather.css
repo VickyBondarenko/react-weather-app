@@ -81,21 +81,26 @@ h5 {
   margin: 0 auto;
 }
 
-.icon-today {
-  max-width: 500px;
+.icon {
+  padding: 0 12px 0 0;
 }
 .col-2 {
   padding: 0px;
 }
-.card-day,
-.icon-today {
+.card-day {
   border: 0 solid #d0d2d6;
   background: #fcfcfc;
   border-radius: 10px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -4px rgba(0, 0, 0, 0.1);
 }
-
+canvas {
+  border: 0 solid #d0d2d6;
+  background: #fcfcfc;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
 #city-input {
   border: 0 solid #d0d2d6;
   background: #fcfcfc;
