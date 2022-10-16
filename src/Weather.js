@@ -45,15 +45,7 @@ export default function Weather() {
                 <span className="temperature" id="temp">
                   25
                 </span>
-                <span className="units">
-                  <a href="#" id="celsius-link" className="active">
-                    °C
-                  </a>{" "}
-                  |
-                  <a href="#" id="fahrenheit-link">
-                    °F
-                  </a>
-                </span>
+                <span className="units">°C | °F</span>
               </div>
             </li>
             <li>
@@ -70,9 +62,11 @@ export default function Weather() {
         <div className="col-4">
           <span>
             <img
-              src={" "}
+              src={
+                "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              }
               alt="sun"
-              className="icon-today"
+              className="icon-today mt-3"
               id="icon"
               weight="100"
             />
