@@ -17,7 +17,7 @@ export default function Weather(props) {
       city: respons.data.name,
       date: new Date(respons.data.dt * 1000),
       day: "Saturday",
-      iconUrl: `http://openweathermap.org/img/wn/${respons.data.weather[0].icon}@2x.png`,
+      icon: respons.data.weather[0].icon,
     });
   }
   function search() {
