@@ -45,9 +45,6 @@ export default function Weather(props) {
             onChange={handelCityChange}
           />
           <input type="submit" className="btn btn-primary" value="Change" />
-          <button type="button" className="btn btn-info">
-            Current
-          </button>
         </form>
         <WeatherInfo data={weatherDate} />
       </div>
