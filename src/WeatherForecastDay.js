@@ -27,7 +27,7 @@ export default function WeatherForecastDay(props) {
         <span className="icon-forcast">
           <WeatherIcon
             code={props.data.weather[0].icon}
-            size={60}
+            size={45}
             alt={props.data.weather[0].main}
           />
         </span>
