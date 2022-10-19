@@ -5,12 +5,13 @@ import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
-  const [weatherDate, setWeatherData] = useState({ ready: false });
+  const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
   function handelRespons(respons) {
     console.log(respons.data);
     setWeatherData({
       ready: true,
+      coordinates: respons.data.coord,
       description: respons.data.weather[0].main,
       temperature: Math.round(respons.data.main.temp),
       humidity: Math.round(respons.data.main.humidity),
@@ -34,7 +35,7 @@ export default function Weather(props) {
     event.preventDefault();
     setCity(event.target.value);
   }
-  if (weatherDate.ready) {
+  if (weatherData.ready) {
     return (
       <div className="Weather">
         <form onSubmit={handelSubmit} className="enter-city" id="enter-city">
@@ -47,8 +48,8 @@ export default function Weather(props) {
           />
           <input type="submit" className="btn btn-primary" value="Change" />
         </form>
-        <WeatherInfo data={weatherDate} />
-        <WeatherForecast />
+        <WeatherInfo data={weatherData} />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
