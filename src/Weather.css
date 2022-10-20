@@ -67,7 +67,7 @@ h5 {
   margin: 10px;
   text-align: center;
   position: relative;
-  transition: all 150ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 .card-day:hover {
   top: 10px;

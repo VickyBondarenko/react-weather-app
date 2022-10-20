@@ -33,10 +33,12 @@ export default function WeatherForecastDay(props) {
         </span>
         <p className="card-text">
           <strong>
-            <span className="weather-forcast-tempersture-max">{Max()}</span>
-            °C{" "}
+            <div className="weather-forcast-tempersture-max">
+              {Max()}
+              °C
+            </div>
           </strong>
-          <span className="weather-forcast-tempersture-min"> {Min()}°C</span>
+          <div className="weather-forcast-tempersture-min"> {Min()}°C</div>
         </p>
       </div>
     </div>
