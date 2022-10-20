@@ -1,0 +1,31 @@
+h5 {
+  font-size: 18px;
+}
+.card-day {
+  border: 0 solid #d0d2d6;
+  background: #fcfcfc;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+  transition: all 250ms ease-in-out;
+}
+.card-day:hover {
+  top: 10px;
+}
+
+.card-body {
+  margin: 0px;
+  padding: 5px;
+}
+
+.icon-forcast {
+  display: inline-flex;
+  margin: 0 auto;
+}
+.weather-forcast-tempersture-min {
+  opacity: 0.8;
+}

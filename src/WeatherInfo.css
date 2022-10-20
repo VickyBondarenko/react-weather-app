@@ -1,0 +1,35 @@
+.WeatherInfo li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 10px;
+}
+.WeatherInfo canvas {
+  border: 0 solid #d0d2d6;
+  background: #fcfcfc;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+.WeatherInfo .description {
+  padding: 0;
+}
+
+.city,
+.day-temp {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.current-weather {
+  font-weight: bold;
+  font-size: 25px;
+}
+.conditions {
+  opacity: 0.8;
+}
+.icon {
+  padding: 0 12px 0 0;
+}
