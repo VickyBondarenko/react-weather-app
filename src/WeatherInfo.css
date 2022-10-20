@@ -2,7 +2,7 @@
   list-style: none;
 }
 
-ul {
+.WeatherInfo ul {
   margin: 0;
   padding: 10px;
 }
@@ -32,4 +32,15 @@ ul {
 }
 .icon {
   padding: 0 12px 0 0;
+}
+@media (max-width: 600px) {
+  .day,
+  .current-weather {
+    font-size: 20px;
+  }
+
+  .city,
+  .day-temp {
+    font-size: 25px;
+  }
 }

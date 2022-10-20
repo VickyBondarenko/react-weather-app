@@ -12,6 +12,7 @@ a {
   border-radius: 10px;
   background: #f3f4f6;
 }
+
 .enter-city {
   margin: 15px 10px;
   text-align: left;
@@ -37,4 +38,18 @@ a {
   font-size: 20px;
   position: relative;
   top: -10px;
+}
+@media (max-width: 600px) {
+  .Weather {
+    padding: 5px;
+    font-size: 15px;
+  }
+  .WeatherInfo canvas {
+    max-width: 80px;
+  }
+  .units {
+    font-size: 15px;
+    position: relative;
+    top: -8px;
+  }
 }
